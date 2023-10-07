@@ -1,0 +1,23 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sum":"cd codingSample && node sum.js",
+    "binaryTree":"cd codingSample && node binaryTree.js"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meekunn1/Playground.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meekunn1/Playground/issues"
+  },
+  "homepage": "https://github.com/meekunn1/Playground#readme"
+}

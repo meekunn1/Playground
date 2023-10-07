@@ -1,0 +1,7 @@
+node_modules
+package-lock.json
+.env
+temporary
+test.html
+google_maps_api_test
+

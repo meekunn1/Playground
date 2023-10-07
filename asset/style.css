@@ -1,3 +1,120 @@
-h1{
-font-size: 16px;
+:root {
+    --ButtonColor: rgb(26, 175, 143);
+
 }
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h1{
+font-size: 200%;
+font-weight: bold;
+}
+
+.flex-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flex-section card{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 0 20px;
+    border: solid 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px yellow;
+    margin: 20px;
+}
+
+.flex-section h2{
+    flex-wrap: wrap;
+    border: solid red;
+    padding: 5px 10px;
+    position:relative ;
+    top: -40px;
+    color: aliceblue;
+    background-image: url(pexels-jakub-novacek-924824.jpg);
+    width: 80%;
+    text-align: center;
+}
+
+#special-title{
+    flex-wrap: wrap;
+    border: solid green;
+    padding: 5px 10px;
+    position:relative ;
+    top: -40px;
+    color: violet;
+    width: 80%;
+    text-align: center;
+    background-image: none;
+    background-color: lightcyan;
+}
+
+.fit-picture{
+    width: 250px;
+}
+
+.flex-section p{
+    font-style: italic
+}
+
+/* From Class */
+.btn {
+    border: none;
+    background-color: var(--ButtonColor);
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
+    color: hsl(60, 70%, 91%);
+    display: inline-block;
+    font-size: 16px;
+    line-height: 22px;
+    margin: 16px 16px 16px 20px;
+    padding: 14px 34px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  #rps[disabled] {
+    cursor: default;
+    background: #c0c7cf;
+  }
+
+  #rpsStatus {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 5px;
+    border-width: 1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+    color: hsl(206, 17%, 28%);
+    font-size: 18px;
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 30px 40px;
+  }
+  /* from class end */
+
+  .KeyPress {
+    padding: 10px;
+    margin: 10px;
+    border: solid tan;
+    background-color: #e7eff8;
+  }
+
+  .KeyPressStart {
+    cursor: pointer;
+    color: #e7eff8;
+    text-align: center;
+    padding: 5px 0px;
+    margin: 5px;
+    border: dotted red;
+    border-radius: 15px;
+    background-color: darkblue;
+  }
+  .KeyPressStatus {
+    text-align: center;
+  }

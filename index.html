@@ -10,16 +10,61 @@
 <body>
     <header>
         <h1>Title Test with H1</h1>
+    </header>
+    <main>
         <section>
             <H2>List test</H2>
             <!--emit VS code shortcut for unordered list = "ul>li*#" where # is number of li items to prepare.-->
             <ul>
                 <li>Unordered list item 1.</li>
                 <li>Unordered list item 2.</li>
-                <li></li>
+                <li>Unordered list item 3.</li>
             </ul>
         </section>
-    </header>
+        <section class="flex-section">
+        <card>
+            <H2>Flexbox test</h2>
+            <p>Make rock-paper-scissor game on webapp using javascript and DOM</p>
+            <textarea
+            readonly
+            id="rpsStatus"
+            placeholder="Click start to play"
+            aria-label="rpsResult"
+          ></textarea>
+            <button id="rps" class="btn">Start Rock-Paper-Scissor Game</button>
+            <img class=fit-picture src="asset/pexels-jakub-novacek-924824.jpg" alt="star night timelap">
+        </card>
 
+        <card>
+            <H2>Flexbox test</h2>
+            <p class="flex-paragraph">Paragraph sample</p>
+            <div class="KeyPress">
+                <p class="KeyPressStart">Start</p>
+                <p class="KeyPressStatus">Off</p>
+                <div id="key-events">
+                  <div id= "title">
+                    <h3>keydown ⬇️ and keyup ⬆️ </h3>
+                    Key Pressed : <span id="key"></span>
+                  </div>
+                  <div>
+                    Key Code : <span id="code"></span>
+                  </div>
+                  <div>
+                    Event status : <span id="status"></span>
+                  </div>
+                </div>
+              </div>
+            <img class=fit-picture src="asset/pexels-brett-sayles-992734.jpg" alt="pink sakura flower on a branch">
+        </card>
+
+        <card>
+            <H2 id="special-title">Flexbox with ID</h2>
+            <p class="flex-paragraph">Paragraph sample</p>
+            <img class=fit-picture src="asset/pexels-jakub-novacek-924824.jpg" alt="star night timelap">
+        </card>
+
+        </section>
+    </main>
+<script src="script.js"></script>
 </body>
 </html>
