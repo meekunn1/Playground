@@ -42,17 +42,19 @@ const depthFirstValues = (root) => {
   return result;
 };
 //recursive function: function that calls itself until it can not. will use stack
-const depthFirstLeftValues = (root) => {
+const depthFirstRecursive = (root) => {
   if (root === null) return [];
-  const leftValues = depthFirstLeftValues(root.left);
-  return [root.val, ...leftValues];
+  const leftValues = depthFirstRecursive(root.left);
+  const rigtValues = depthFirstRecursive(root.right);
+
+  return [root.val, ...leftValues, ...rigtValues];
 };
 
-const list = depthFirstValues(a);
-console.log(`depth first valuese: [${list}]`);
+const depthList = depthFirstValues(a);
+console.log(`depth first valuese: [${depthList}]`);
 
-const leftValues = depthFirstLeftValues(a);
-console.log(`depth first left only values: [${leftValues}]`);
+const depthListRecursive = depthFirstRecursive(a);
+console.log(`depth first left only values: [${depthListRecursive}]`);
 
 //Breath First data structure uses Queue. need to use iterative code because uses queue
 const breadthFirstValues = (root) => {
