@@ -1,8 +1,16 @@
 import React, { useState, useEffect } from "react";
+import profile from "../../assets/steelOptions"
 
 function Steel() {
+const typeSelection = function(choice) {
+  return <option>{choice}</option>
+}
+
+  const list = [];
   const [inputState, setInputState] = useState({
-    steelType: "",
+    typeWidth: "",
+    typeHeight: "",
+    typeThickness: "",
     length: "",
     quantity: "",
   });
@@ -30,11 +38,40 @@ function Steel() {
           <label>Type</label>
           <input
             type='text'
-            name='steelType'
-            placeholder='input steel type'
+            name='typeWidth'
             onChange={handleChange}
             required
           />
+          x
+          <input
+            type='integer'
+            name='typeHeight'
+            onChange={handleChange}
+            required
+          />
+          x
+          <input
+            type='text'
+            name='typeThickness'
+            onChange={handleChange}
+            required
+          />
+          t
+          <input
+            type='integer'
+            name='length'
+            onChange={handleChange}
+            required
+          />
+          <input
+            type='number'
+            name='quantity'
+            onChange={handleChange}
+            required
+          />
+          <select>
+{profile.map(typeSelection)}
+          </select>
           <button type='submit'>Submit</button>
         </form>
       </div>
