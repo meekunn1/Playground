@@ -5,10 +5,12 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sum":"cd codingSample && node sum.js",
-    "binaryTree":"cd codingSample/binaryTree && node binaryTree.js",
-    "traversal":"cd codingSample/binaryTree && node traversal.js",
-    "react":"cd reactPage && npm start"
+    "sum": "cd codingSample && node sum.js",
+    "binaryTree": "cd codingSample/binaryTree && node binaryTree.js",
+    "traversal": "cd codingSample/binaryTree && node traversal.js",
+    "react": "cd reactPage && npm start",
+    "array": "cd codingSample && node array.js",
+    "switch": "cd codingSample && node switchCase.js"
 
   },
   "repository": {
